@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Pictures/logo.png"> <!-- favicon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="Java/header.js" defer></script>
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/article.css">
+    <title>Article</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="logo">
+            <button id="menu" onclick="openNav()"><i class="material-icons">menu</i></button>
+            <a href="index.html">
+            <div>
+                <img src="Pictures/logo.png" alt="logo">
+                <h1>LEAFLY</h1>
+            </div>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <div class="nav-item">
+                    <li>Yemek</li>
+                    <div class="dropdown">
+                        <a href="#">Yemek Tarifleri</a>
+                        <a href="#">Sağlıklı Besinler</a>
+                        <a href="#">Besin Ögeleri</a>
+                        <a href="#">Meyve ve Sebzeler</a>
+                        <a href="#">Kategoriler</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <li>Kalori</li>
+                    <div class="dropdown">
+                        <a href="#">Kalori Hesaplama</a>
+                        <a href="#">İdeal Kilonu Hesapla</a>
+                        <a href="#">Vücut Yağ Oranı</a>
+                        <a href="#">Besin Değerleri</a>
+                        <a href="#">Kalori Kaynakları</a>
+                    </div>   
+                </div>
+
+                <div class="nav-item">
+                    <li>Sağlık</li>
+                    <div class="dropdown">
+                        <a href="#">Hastalıklar</a>
+                        <a href="#">Tanı Yöntemleri</a>
+                        <a href="#">Tedaviler</a>
+                        <a href="#">İlaçlar</a>
+                        <a href="#">Randevular</a>
+                    </div>   
+                </div>
+
+                <div class="nav-item">
+                    <li>Spor</li>
+                    <div class="dropdown">
+                        <a href="#">Göğüs Egzersizleri</a>
+                        <a href="#">Sırt Egzersizleri</a>
+                        <a href="#">Omuz Egzersizleri</a>
+                        <a href="#">Kol Egzersizleri</a>
+                        <a href="#">Bacak Egzersizleri</a>
+                    </div>   
+                </div>
+
+                <div class="nav-item">
+                    <li>Diyet</li>
+                    <div class="dropdown">
+                        <a href="#">Hızlı Diyet</a>
+                        <a href="#">Diyet Programları</a>
+                        <a href="#">Vücut Kitle İndeksi</a>
+                        <a href="#">Kilo Verme Diyeti</a>
+                        <a href="#">Uzman Görüşü</a>
+                    </div>   
+                </div>
+            </ul>
+        </nav>
+
+        <div class="buttons">
+            <input id="search-input" type="search" placeholder="Search">
+            <button class="search-btn"><i class="material-icons">search</i></button>
+            <button id="btn" class="btn">Üye Ol</button>
+            <button class="close-btn"><i class="material-icons">close</i></button>
+        </div>
+
+        <!-- sidenav start -->
+        <div class="side-nav" id="Side-nav">
+            <div class="side-top">
+                <div class="mini-logo">
+                    <img src="Pictures/logo.png" alt="logo">
+                    <h1>LEAFLY</h1>
+                </div>
+                <a href="javascript::void(0)" class="closebtn" onclick="closeNav()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            </div>
+
+                <button class="dropdown-btn">Yemek <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Yemek Tarifleri</a>
+                    <a href="#">Sağlıklı Besinler</a>
+                    <a href="#">Besin Ögeleri</a>
+                    <a href="#">Meyve ve Sebzeler</a>
+                    <a href="#">Kategoriler</a>
+                </div>
+                <button class="dropdown-btn">Kalori <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Kalori Hesaplama</a>
+                    <a href="#">İdeal Kilonu Hesapla</a>
+                    <a href="#">Vücut Yağ Oranı</a>
+                    <a href="#">Besin Değerleri</a>
+                    <a href="#">Kalori Kaynakları</a>
+                </div>
+                
+                <button class="dropdown-btn">Sağlık <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Hastalıklar</a>
+                    <a href="#">Tanı Yöntemleri</a>
+                    <a href="#">Tedaviler</a>
+                    <a href="#">İlaçlar</a>
+                    <a href="#">Randevular</a>
+                </div>  
+
+                <button class="dropdown-btn">Spor <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Göğüs Egzersizleri</a>
+                    <a href="#">Sırt Egzersizleri</a>
+                    <a href="#">Omuz Egzersizleri</a>
+                    <a href="#">Kol Egzersizleri</a>
+                    <a href="#">Bacak Egzersizleri</a>
+                </div>
+
+                <button class="dropdown-btn">Diyet <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Hızlı Diyet</a>
+                    <a href="#">Diyet Programları</a>
+                    <a href="#">Vücut Kitle İndeksi</a>
+                    <a href="#">Kilo Verme Diyeti</a>
+                    <a href="#">Uzman Görüşü</a>
+                </div>   
+        </div>
+        <!-- sidenav end -->
+
+    </header>
+    <!-- header end -->
+
+    <section>
+        <div>
+            <h1>LOVE IS THE MOST PAINFUL EMOTION</h1>
+
+            <p>Migren tipi baş ağrıları ikinci en sık görülen birincil baş ağrısı türüdür. Migren kaynaklı baş ağrıları yetişkinler kadar çocuklarda da görülebilir. Ergenlik çağından önce erkek ve kız çocukları migrenin yol açtığı baş ağrılarından eşit derecede etkilenir; ancak ergenlik dönemi sonrası migrenin yol açtığı baş ağrılarından kadınlar, erkeklerden daha fazla etkilenir. 
+            Genellikle pek çok migren hastasının ailesinde başka bir migren hastası daha bulunur o yüzden öykü olarak genetik yatkınlığı bulunan bir baş ağrısı tipidir denilebilir. Migren, bazı yiyecek ve içecekler; eski peynir, çerez, çikolata, yoğurt, soğan, incir, karaciğer, kafeinli yiyecek ve içecekler, tütsülenmiş ya da salamura balık/et ile tetiklenebilir. Yine çok fazla ya da az uyumak, açlık, fiziksel veya zihinsel yorgunluk, vardiyalı çalışma gibi düzensizlikler migren tipi baş ağrısının oluşumunda etkilidir. Bununla birlikte adet dönemi, hava/ mevsim/ basınç değişiklikleri, titreşen / parlak / fluoresan ışıklar, parlak gün ışığı, kokular (parfüm, kimyasal maddeler, sigara) ve stres de baş ağrısına neden olur. Migren tipi baş ağrısı şu özellikler ile kendini gösterebilir:</p>
+            <p>Migren tipi baş ağrıları ikinci en sık görülen birincil baş ağrısı türüdür. Migren kaynaklı baş ağrıları yetişkinler kadar çocuklarda da görülebilir. Ergenlik çağından önce erkek ve kız çocukları migrenin yol açtığı baş ağrılarından eşit derecede etkilenir; ancak ergenlik dönemi sonrası migrenin yol açtığı baş ağrılarından kadınlar, erkeklerden daha fazla etkilenir. 
+            Genellikle pek çok migren hastasının ailesinde başka bir migren hastası daha bulunur o yüzden öykü olarak genetik yatkınlığı bulunan bir baş ağrısı tipidir denilebilir. Migren, bazı yiyecek ve içecekler; eski peynir, çerez, çikolata, yoğurt, soğan, incir, karaciğer, kafeinli yiyecek ve içecekler, tütsülenmiş ya da salamura balık/et ile tetiklenebilir. Yine çok fazla ya da az uyumak, açlık, fiziksel veya zihinsel yorgunluk, vardiyalı çalışma gibi düzensizlikler migren tipi baş ağrısının oluşumunda etkilidir. Bununla birlikte adet dönemi, hava/ mevsim/ basınç değişiklikleri, titreşen / parlak / fluoresan ışıklar, parlak gün ışığı, kokular (parfüm, kimyasal maddeler, sigara) ve stres de baş ağrısına neden olur. Migren tipi baş ağrısı şu özellikler ile kendini gösterebilir:</p>
+            <p>Migren tipi baş ağrıları ikinci en sık görülen birincil baş ağrısı türüdür. Migren kaynaklı baş ağrıları yetişkinler kadar çocuklarda da görülebilir. Ergenlik çağından önce erkek ve kız çocukları migrenin yol açtığı baş ağrılarından eşit derecede etkilenir; ancak ergenlik dönemi sonrası migrenin yol açtığı baş ağrılarından kadınlar, erkeklerden daha fazla etkilenir. 
+            Genellikle pek çok migren hastasının ailesinde başka bir migren hastası daha bulunur o yüzden öykü olarak genetik yatkınlığı bulunan bir baş ağrısı tipidir denilebilir. Migren, bazı yiyecek ve içecekler; eski peynir, çerez, çikolata, yoğurt, soğan, incir, karaciğer, kafeinli yiyecek ve içecekler, tütsülenmiş ya da salamura balık/et ile tetiklenebilir. Yine çok fazla ya da az uyumak, açlık, fiziksel veya zihinsel yorgunluk, vardiyalı çalışma gibi düzensizlikler migren tipi baş ağrısının oluşumunda etkilidir. Bununla birlikte adet dönemi, hava/ mevsim/ basınç değişiklikleri, titreşen / parlak / fluoresan ışıklar, parlak gün ışığı, kokular (parfüm, kimyasal maddeler, sigara) ve stres de baş ağrısına neden olur. Migren tipi baş ağrısı şu özellikler ile kendini gösterebilir:</p>
+
+            <img src="Pictures/egersize.jpg" alt="">
+        </div>
+    </section>
+
+</body>
+</html>

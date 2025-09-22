@@ -1,0 +1,25 @@
+section
+{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10% 20%;
+    height: 100vh;
+}
+
+section div
+{
+    box-sizing: border-box;
+    background-color: white;
+    padding: 8%;
+    min-height: 20vh;
+}
+
+section p
+{
+    font-size: 18px;
+}
+
+section img
+{
+    width: 100%;
+}
