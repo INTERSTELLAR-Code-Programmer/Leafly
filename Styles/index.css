@@ -1,0 +1,134 @@
+:root
+{
+    --theme-color: #7dc25b;
+}
+
+.carousel
+{
+    position: relative;
+    width: 100%;
+    max-width: 50rem;
+    aspect-ratio: 12 / 9.5;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 10px;
+}
+
+.slides
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.slides a
+{
+    color: black;
+    flex: 0 0 100%;
+}
+
+.slides a:hover .slide > div
+{
+    color: var(--theme-color);
+}
+
+.slide
+{
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    transition: 150ms ease;
+}
+
+.slide img
+{
+    width: 100%;
+}
+
+.slide > div
+{
+    box-sizing: border-box;
+    flex-grow: 1;
+    background-color: rgb(240, 240, 240);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide > div h1
+{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    word-break: break-word;
+}
+
+.arrow
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    background: rgba(255, 255, 255, 0.2); 
+    color: white;
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.arrow:hover
+{
+    background-color: rgb(237, 237, 237);
+    color: black;
+}
+
+.arrow.left
+{
+    left: 20px;
+}
+
+.arrow.right
+{
+    right: 20px;
+}
+
+@media (max-width: 480px)
+{
+    .slide > div h1
+    {
+        font-size: 15px;
+    }
+
+    .carousel
+    {
+        border-radius: 0;
+        aspect-ratio: 12 / 10;
+    }
+
+    .arrow
+    {
+        font-size: 1.2rem;
+        width: 30px;
+        height: 30px;
+        top: 45%;
+    }
+}
+
+
+
+
+
+
+
+
+

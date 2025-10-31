@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Pictures/logo.png"> <!-- favicon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="Java/header.js" defer></script>
+    <script type="text/javascript" src="Java/besindeğerleri.js" defer></script>
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/besindeğerleri.css">
+    <title>Leafly</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="logo">
+            <button id="menu" onclick="openNav()"><i class="material-icons">menu</i></button>
+            <a href="index.html">
+            <div>
+                <img src="Pictures/logo.png" alt="logo">
+                <h1>LEAFLY</h1>
+            </div>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <div class="nav-item">
+                    <li>Yemek</li>
+                    <div class="dropdown">
+                        <a href="article.html">Yemek Tarifleri</a>
+                        <a href="#">Sağlıklı Besinler</a>
+                        <a href="#">Besin Ögeleri</a>
+                        <a href="#">Meyve ve Sebzeler</a>
+                        <a href="#">Kategoriler</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <li>Kalori</li>
+                    <div class="dropdown">
+                        <a href="kalori.html">Kalori Hesaplama</a>
+                        <a href="#">İdeal Kilonu Hesapla</a>
+                        <a href="#">Vücut Yağ Oranı</a>
+                        <a href="#">Besin Değerleri</a>
+                        <a href="#">Kalori Kaynakları</a>
+                    </div>   
+                </div>
+
+                <div class="nav-item">
+                    <li>Sağlık</li>
+                    <div class="dropdown">
+                        <a href="#">Hastalıklar</a>
+                        <a href="#">Tanı Yöntemleri</a>
+                        <a href="#">Tedaviler</a>
+                        <a href="#">Uyku Kalitesi</a>
+                        <a href="#">Randevular</a>
+                    </div>   
+                </div>
+
+                <div class="nav-item">
+                    <li>Spor</li>
+                    <div class="dropdown">
+                        <a href="#">Göğüs Egzersizleri</a>
+                        <a href="#">Sırt Egzersizleri</a>
+                        <a href="#">Omuz Egzersizleri</a>
+                        <a href="#">Kol Egzersizleri</a>
+                        <a href="#">Bacak Egzersizleri</a>
+                    </div>   
+                </div>
+
+                <div class="nav-item">
+                    <li>Diyet</li>
+                    <div class="dropdown">
+                        <a href="#">Hızlı Diyet</a>
+                        <a href="#">Diyet Programları</a>
+                        <a href="#">Vücut Kitle İndeksi</a>
+                        <a href="#">Kilo Verme Diyeti</a>
+                        <a href="#">Uzman Görüşü</a>
+                    </div>   
+                </div>
+            </ul>
+        </nav>
+
+        <div class="buttons">
+            <input id="search-input" type="search" placeholder="Search">
+            <button class="search-btn"><i class="material-icons">search</i></button>
+            <button id="btn" class="btn">Üye Ol</button>
+            <button class="close-btn"><i class="material-icons">close</i></button>
+        </div>
+
+        <!-- sidenav start -->
+        <div class="side-nav" id="Side-nav">
+            <div class="side-top">
+                <div class="mini-logo">
+                    <img src="Pictures/logo.png" alt="logo">
+                    <h1>LEAFLY</h1>
+                </div>
+                <a href="javascript::void(0)" class="closebtn" onclick="closeNav()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            </div>
+
+                <button class="dropdown-btn">Yemek <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="article.html">Yemek Tarifleri</a>
+                    <a href="#">Sağlıklı Besinler</a>
+                    <a href="#">Besin Ögeleri</a>
+                    <a href="#">Meyve ve Sebzeler</a>
+                    <a href="#">Kategoriler</a>
+                </div>
+                <button class="dropdown-btn">Kalori <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Kalori Hesaplama</a>
+                    <a href="#">İdeal Kilonu Hesapla</a>
+                    <a href="#">Vücut Yağ Oranı</a>
+                    <a href="#">Besin Değerleri</a>
+                    <a href="#">Kalori Kaynakları</a>
+                </div>
+                
+                <button class="dropdown-btn">Sağlık <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Hastalıklar</a>
+                    <a href="#">Tanı Yöntemleri</a>
+                    <a href="#">Tedaviler</a>
+                    <a href="#">İlaçlar</a>
+                    <a href="#">Randevular</a>
+                </div>  
+
+                <button class="dropdown-btn">Spor <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Göğüs Egzersizleri</a>
+                    <a href="#">Sırt Egzersizleri</a>
+                    <a href="#">Omuz Egzersizleri</a>
+                    <a href="#">Kol Egzersizleri</a>
+                    <a href="#">Bacak Egzersizleri</a>
+                </div>
+
+                <button class="dropdown-btn">Diyet <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Hızlı Diyet</a>
+                    <a href="#">Diyet Programları</a>
+                    <a href="#">Vücut Kitle İndeksi</a>
+                    <a href="#">Kilo Verme Diyeti</a>
+                    <a href="#">Uzman Görüşü</a>
+                </div>   
+        </div>
+        <!-- sidenav end -->
+
+    </header>
+    <!-- header end -->
+
+    <!-- food classification start-->
+    <div class="empty">
+        <h1 id="topic">BESİN DEĞERLERİ</h1>
+        
+        <div class="filter">
+            <button id="healthyBtn">Sağlıklı Besinler</button>
+            <button id="halfhealthyBtn">Kısmen Sağlıklı Besinler</button>
+            <button id="unhealthyBtn">Sağlıksız Besinler</button>
+        </div>
+        
+        <div class="container">
+
+            <a href="burger.html">
+            <div class="food">
+                <img src="Pictures/hamburger.jpg">
+                <h4>HAMBURGER</h4>
+                <div class="content">
+                    <div class="score">32</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/pizza.jpg">
+                <h4>PİZZA</h4>
+                <div class="content">
+                    <div class="score">55</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/salad.jpg">
+                <h4>SALATA</h4>
+                <div class="content">
+                    <div class="score">92</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/fries.jpg">
+                <h4>PATATES KIZARTMASI</h4>
+                <div class="content">
+                    <div class="score">38</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/sandwich.jpg">
+                <h4>SANDİVİÇ</h4>
+                <div class="content">
+                    <div class="score">85</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/chicken.jpg">
+                <h4>ÇITIR TAVUK</h4>
+                <div class="content">
+                    <div class="score">90</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/taco.jpg">
+                <h4>TACO</h4>
+                <div class="content">
+                    <div class="score">50</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/pasta.jpg">
+                <h4>MAKARNA</h4>
+                <div class="content">
+                    <div class="score">60</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/fish.jpg">
+                <h4>BALIK</h4>
+                <div class="content">
+                    <div class="score">95</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/baklava.jpg">
+                <h4>Baklava</h4>
+                <div class="content">
+                    <div class="score">30</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/steak.jpg">
+                <h4>KIRMIZI ET</h4>
+                <div class="content">
+                    <div class="score">88</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/lahmacun.jpg">
+                <h4>LAHMACUN</h4>
+                <div class="content">
+                    <div class="score">68</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/churros.jpg">
+                <h4>CHURROS</h4>
+                <div class="content">
+                    <div class="score">20</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/pide.jpg">
+                <h4>PİDE</h4>
+                <div class="content">
+                    <div class="score">65</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/mantı.jpg">
+                <h4>MANTI</h4>
+                <div class="content">
+                    <div class="score">55</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/turta.jpg">
+                <h4>ELMALI TURTA</h4>
+                <div class="content">
+                    <div class="score">36</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/kebap.jpg">
+                <h4>KEBAP</h4>
+                <div class="content">
+                    <div class="score">80</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/cheesecake.jpg">
+                <h4>CHEESECAKE</h4>
+                <div class="content">
+                    <div class="score">50</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/börek.jpg">
+                <h4>BÖREK</h4>
+                <div class="content">
+                    <div class="score">65</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/sarma.jpg">
+                <h4>SARMA</h4>
+                <div class="content">
+                    <div class="score">80</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/döner.jpg">
+                <h4>DÖNER</h4>
+                <div class="content">
+                    <div class="score">76</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/egg.jpg">
+                <h4>YUMURTA</h4>
+                <div class="content">
+                    <div class="score">85</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/cookie.jpg">
+                <h4>KURABİYE</h4>
+                <div class="content">
+                    <div class="score">42</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/çorba.jpg">
+                <h4>ÇORBA</h4>
+                <div class="content">
+                    <div class="score">90</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/pilav.jpg">
+                <h4>PİLAV</h4>
+                <div class="content">
+                    <div class="score">72</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/meatball.jpg">
+                <h4>KÖFTE</h4>
+                <div class="content">
+                    <div class="score">82</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/hotdog.jpg">
+                <h4>HOT DOG</h4>
+                <div class="content">
+                    <div class="score">25</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/sushi.jpg">
+                <h4>SUSHI</h4>
+                <div class="content">
+                    <div class="score">60</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/waffle.jpg">
+                <h4>WAFFLE</h4>
+                <div class="content">
+                    <div class="score">52</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="food">
+                <img src="Pictures/chocolate.jpg">
+                <h4>ÇİKOLATA</h4>
+                <div class="content">
+                    <div class="score">62</div>
+                    <div class="label"></div>
+                </div>
+            </div>
+            </a>
+
+        </div>
+    </div>
+    <!-- food classification end-->
+
+</body>
+</html>

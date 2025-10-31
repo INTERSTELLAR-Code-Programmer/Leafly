@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Pictures/logo.png"> <!-- favicon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="Java/header.js" defer></script>
+    <script type="text/javascript" src="Java/index.js" defer></script>
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/burger.css">
+    <title>Leafly</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="logo">
+            <button id="menu" onclick="openNav()"><i class="material-icons">menu</i></button>
+            <a href="index.html">
+            <div>
+                <img src="Pictures/logo.png" alt="logo">
+                <h1>LEAFLY</h1>
+            </div>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <div class="nav-item">
+                    <li>Yemek</li>
+                    <div class="dropdown">
+                        <a href="article.html">Yemek Tarifleri</a>
+                        <a href="#">Sağlıklı Besinler</a>
+                        <a href="#">Besin Ögeleri</a>
+                        <a href="#">Meyve ve Sebzeler</a>
+                        <a href="#">Kategoriler</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <li>Kalori</li>
+                    <div class="dropdown">
+                        <a href="kalori.html">Kalori Hesaplama</a>
+                        <a href="#">İdeal Kilonu Hesapla</a>
+                        <a href="#">Vücut Yağ Oranı</a>
+                        <a href="besindeğerleri.html">Besin Değerleri</a>
+                        <a href="#">Kalori Kaynakları</a>
+                    </div>   
+                </div>
+
+                <div class="nav-item">
+                    <li>Sağlık</li>
+                    <div class="dropdown">
+                        <a href="#">Hastalıklar</a>
+                        <a href="#">Tanı Yöntemleri</a>
+                        <a href="#">Tedaviler</a>
+                        <a href="#">Uyku Kalitesi</a>
+                        <a href="#">Randevular</a>
+                    </div>   
+                </div>
+
+                <div class="nav-item">
+                    <li>Spor</li>
+                    <div class="dropdown">
+                        <a href="#">Göğüs Egzersizleri</a>
+                        <a href="#">Sırt Egzersizleri</a>
+                        <a href="#">Omuz Egzersizleri</a>
+                        <a href="#">Kol Egzersizleri</a>
+                        <a href="#">Bacak Egzersizleri</a>
+                    </div>   
+                </div>
+
+                <div class="nav-item">
+                    <li>Diyet</li>
+                    <div class="dropdown">
+                        <a href="#">Hızlı Diyet</a>
+                        <a href="#">Diyet Programları</a>
+                        <a href="#">Vücut Kitle İndeksi</a>
+                        <a href="#">Kilo Verme Diyeti</a>
+                        <a href="#">Uzman Görüşü</a>
+                    </div>   
+                </div>
+            </ul>
+        </nav>
+
+        <div class="buttons">
+            <input id="search-input" type="search" placeholder="Search">
+            <button class="search-btn"><i class="material-icons">search</i></button>
+            <button id="btn" class="btn">Üye Ol</button>
+            <button class="close-btn"><i class="material-icons">close</i></button>
+        </div>
+
+        <!-- sidenav start -->
+        <div class="side-nav" id="Side-nav">
+            <div class="side-top">
+                <div class="mini-logo">
+                    <img src="Pictures/logo.png" alt="logo">
+                    <h1>LEAFLY</h1>
+                </div>
+                <a href="javascript::void(0)" class="closebtn" onclick="closeNav()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            </div>
+
+                <button class="dropdown-btn">Yemek <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="article.html">Yemek Tarifleri</a>
+                    <a href="#">Sağlıklı Besinler</a>
+                    <a href="#">Besin Ögeleri</a>
+                    <a href="#">Meyve ve Sebzeler</a>
+                    <a href="#">Kategoriler</a>
+                </div>
+                <button class="dropdown-btn">Kalori <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Kalori Hesaplama</a>
+                    <a href="#">İdeal Kilonu Hesapla</a>
+                    <a href="#">Vücut Yağ Oranı</a>
+                    <a href="besindeğerleri.html">Besin Değerleri</a>
+                    <a href="#">Kalori Kaynakları</a>
+                </div>
+                
+                <button class="dropdown-btn">Sağlık <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Hastalıklar</a>
+                    <a href="#">Tanı Yöntemleri</a>
+                    <a href="#">Tedaviler</a>
+                    <a href="#">İlaçlar</a>
+                    <a href="#">Randevular</a>
+                </div>  
+
+                <button class="dropdown-btn">Spor <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Göğüs Egzersizleri</a>
+                    <a href="#">Sırt Egzersizleri</a>
+                    <a href="#">Omuz Egzersizleri</a>
+                    <a href="#">Kol Egzersizleri</a>
+                    <a href="#">Bacak Egzersizleri</a>
+                </div>
+
+                <button class="dropdown-btn">Diyet <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Hızlı Diyet</a>
+                    <a href="#">Diyet Programları</a>
+                    <a href="#">Vücut Kitle İndeksi</a>
+                    <a href="#">Kilo Verme Diyeti</a>
+                    <a href="#">Uzman Görüşü</a>
+                </div>   
+        </div>
+        <!-- sidenav end -->
+
+    </header>
+    <!-- header end -->
+
+    <!-- food information start -->
+    <div class="main">
+        <div class="food-img"><img src="Pictures/burgervertical.png"></div>
+
+        <div class="main-content-row">
+
+            <div class="left-section">
+
+                <div class="food">
+                    <div><h1 id="food-name">HAMBURGER</h1></div>
+
+                    <div class="food-score">
+                        <div class="score">
+                            <h1 id="food-label">Sağlık Skoru</h1>
+                            <h1 id="metascore">30/100</h1>
+                        </div>
+
+                        <div class="score user">
+                            <h1 id="food-label">Kullanıcı Skoru</h1>
+                            <h1>5/10</h1>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <script>
+                    const foods = document.querySelectorAll(".food");
+
+foods.forEach(foods => {
+    const scoreDiv = foods.querySelector(".score");
+    const labelDiv = foods.querySelector(".label");
+    const score = parseInt(scoreDiv.textContent);
+
+    if (score < 40)
+    {
+        scoreDiv.style.backgroundColor = "#ff4b4b";
+        labelDiv.textContent = "Sağlıksız Besin";
+    }
+    else if (score < 70)
+    {
+        scoreDiv.style.backgroundColor = "#ffbe46";
+        labelDiv.textContent = "Kısmen Sağlıklı";
+    }
+    else
+    {
+        labelDiv.textContent = "Sağlıklı Besin";
+    }
+});
+                </script>
+
+
+                <div class="besin">
+                    <h2>Besin Değeri <span>(100gr için)</span></h2>
+
+                    <div class="nutrition-container">
+                        <!-- 1. Kalori -->
+                        <div class="nutrient-item">
+                            <div class="nutrient-ring calories">
+                                <div class="nutrient-content">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-400q0-105 50-187t110-138q60-56 110-85.5l50-29.5v132q0 37 25 58.5t56 21.5q17 0 32.5-7t28.5-23l18-22q72 42 116 116.5T800-400q0 88-43 160.5T644-125q17-24 26.5-52.5T680-238q0-40-15-75.5T622-377L480-516 339-377q-29 29-44 64t-15 75q0 32 9.5 60.5T316-125q-70-42-113-114.5T160-400Zm320-4 85 83q17 17 26 38t9 45q0 49-35 83.5T480-120q-50 0-85-34.5T360-238q0-23 9-44.5t26-38.5l85-83Z"/></svg>
+                                    <span class="nutrient-label">Kalori</span>
+                                    <span class="nutrient-value">550 kcal</span>
+                                </div>
+                            </div>
+                            <span class="daily-value">25% günlük değer</span>
+                        </div>
+
+                        <!-- 2. Protein -->
+                        <div class="nutrient-item">
+                            <div class="nutrient-ring protein">
+                                <div class="nutrient-content">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M645-840q100 0 167.5 74T880-590q0 18-2 35.5t-7 34.5H621l-68-102q-5-8-14-13t-19-5q-13 0-23.5 8T482-612l-54 162-35-52q-5-8-14-13t-19-5H89q-5-17-7-34.5T80-589q0-103 67-177t167-74q48 0 90.5 19t75.5 53q32-34 74.5-53t90.5-19ZM480-120q-18 0-34.5-6.5T416-146L148-415q-6-6-11-12t-10-13h211l68 102q5 8 14 13t19 5q13 0 24-8t15-20l54-162 34 52q6 8 15 13t19 5h232l-10 12-10 12-269 270q-13 13-29 19.5t-34 6.5Z"/></svg>
+                                    <span class="nutrient-label">Protein</span>
+                                    <span class="nutrient-value">30 g</span>
+                                    
+                                </div>
+                            </div>
+                            <span class="daily-value">60% günlük değer</span>
+                        </div>
+
+                        <!-- 3. Yağ -->
+                        <div class="nutrient-item">
+                            <div class="nutrient-ring fat">
+                                <div class="nutrient-content">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M491-200q12-1 20.5-9.5T520-230q0-14-9-22.5t-23-7.5q-41 3-87-22.5T343-375q-2-11-10.5-18t-19.5-7q-14 0-23 10.5t-6 24.5q17 91 80 130t127 35ZM480-80q-137 0-228.5-94T160-408q0-100 79.5-217.5T480-880q161 137 240.5 254.5T800-408q0 140-91.5 234T480-80Zm0-80q104 0 172-70.5T720-408q0-73-60.5-165T480-774Q361-665 300.5-573T240-408q0 107 68 177.5T480-160Zm0-320Z"/></svg>
+                                    <span class="nutrient-label">Yağ</span>
+                                    <span class="nutrient-value">30 g</span>
+                                    
+                                </div>
+                            </div>
+                            <span class="daily-value">35% günlük değer</span>
+                        </div>
+
+                        <!-- 4. Karbonhidrat -->
+                        <div class="nutrient-item">
+                            <div class="nutrient-ring carbs">
+                                <div class="nutrient-content">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m175-120-56-56 410-410q-18-42-5-95t57-95q53-53 118-62t106 32q41 41 32 106t-62 118q-42 44-95 57t-95-5l-50 50 304 304-56 56-304-302-304 302Zm118-342L173-582q-54-54-54-129t54-129l248 250-128 128Z"/></svg>
+                                    <span class="nutrient-label">Karbonhidrat</span>
+                                    <span class="nutrient-value">25 g</span>
+                                    
+                                </div>
+                            </div>
+                            <span class="daily-value">35% günlük değer</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-section">
+            </div>
+
+        </div>
+    </div>
+    <!-- food information end -->
+
+</body>
+</html>

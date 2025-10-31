@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Pictures/logo.png"> <!-- favicon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="Java/header.js" defer></script>
+    <script type="text/javascript" src="Java/index.js" defer></script>
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/index.css">
+    <title>Leafly</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="logo">
+            <button id="menu" onclick="openNav()"><i class="material-icons">menu</i></button>
+            <a href="index.html">
+            <div>
+                <img src="Pictures/logo.png" alt="logo">
+                <h1>LEAFLY</h1>
+            </div>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <div class="nav-item">
+                    <li>Yemek</li>
+                    <div class="dropdown">
+                        <a href="article.html">Yemek Tarifleri</a>
+                        <a href="#">Sağlıklı Besinler</a>
+                        <a href="#">Besin Ögeleri</a>
+                        <a href="#">Meyve ve Sebzeler</a>
+                        <a href="#">Kategoriler</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <li>Kalori</li>
+                    <div class="dropdown">
+                        <a href="kalori.html">Kalori Hesaplama</a>
+                        <a href="#">İdeal Kilonu Hesapla</a>
+                        <a href="#">Vücut Yağ Oranı</a>
+                        <a href="besindeğerleri.html">Besin Değerleri</a>
+                        <a href="#">Kalori Kaynakları</a>
+                    </div>   
+                </div>
+
+                <div class="nav-item">
+                    <li>Sağlık</li>
+                    <div class="dropdown">
+                        <a href="#">Hastalıklar</a>
+                        <a href="#">Tanı Yöntemleri</a>
+                        <a href="#">Tedaviler</a>
+                        <a href="#">Uyku Kalitesi</a>
+                        <a href="#">Randevular</a>
+                    </div>   
+                </div>
+
+                <div class="nav-item">
+                    <li>Spor</li>
+                    <div class="dropdown">
+                        <a href="#">Göğüs Egzersizleri</a>
+                        <a href="#">Sırt Egzersizleri</a>
+                        <a href="#">Omuz Egzersizleri</a>
+                        <a href="#">Kol Egzersizleri</a>
+                        <a href="#">Bacak Egzersizleri</a>
+                    </div>   
+                </div>
+
+                <div class="nav-item">
+                    <li>Diyet</li>
+                    <div class="dropdown">
+                        <a href="#">Hızlı Diyet</a>
+                        <a href="#">Diyet Programları</a>
+                        <a href="#">Vücut Kitle İndeksi</a>
+                        <a href="#">Kilo Verme Diyeti</a>
+                        <a href="#">Uzman Görüşü</a>
+                    </div>   
+                </div>
+            </ul>
+        </nav>
+
+        <div class="buttons">
+            <input id="search-input" type="search" placeholder="Search">
+            <button class="search-btn"><i class="material-icons">search</i></button>
+            <button id="btn" class="btn">Üye Ol</button>
+            <button class="close-btn"><i class="material-icons">close</i></button>
+        </div>
+
+        <!-- sidenav start -->
+        <div class="side-nav" id="Side-nav">
+            <div class="side-top">
+                <div class="mini-logo">
+                    <img src="Pictures/logo.png" alt="logo">
+                    <h1>LEAFLY</h1>
+                </div>
+                <a href="javascript::void(0)" class="closebtn" onclick="closeNav()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            </div>
+
+                <button class="dropdown-btn">Yemek <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="article.html">Yemek Tarifleri</a>
+                    <a href="#">Sağlıklı Besinler</a>
+                    <a href="#">Besin Ögeleri</a>
+                    <a href="#">Meyve ve Sebzeler</a>
+                    <a href="#">Kategoriler</a>
+                </div>
+                <button class="dropdown-btn">Kalori <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Kalori Hesaplama</a>
+                    <a href="#">İdeal Kilonu Hesapla</a>
+                    <a href="#">Vücut Yağ Oranı</a>
+                    <a href="besindeğerleri.html">Besin Değerleri</a>
+                    <a href="#">Kalori Kaynakları</a>
+                </div>
+                
+                <button class="dropdown-btn">Sağlık <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Hastalıklar</a>
+                    <a href="#">Tanı Yöntemleri</a>
+                    <a href="#">Tedaviler</a>
+                    <a href="#">İlaçlar</a>
+                    <a href="#">Randevular</a>
+                </div>  
+
+                <button class="dropdown-btn">Spor <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Göğüs Egzersizleri</a>
+                    <a href="#">Sırt Egzersizleri</a>
+                    <a href="#">Omuz Egzersizleri</a>
+                    <a href="#">Kol Egzersizleri</a>
+                    <a href="#">Bacak Egzersizleri</a>
+                </div>
+
+                <button class="dropdown-btn">Diyet <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Hızlı Diyet</a>
+                    <a href="#">Diyet Programları</a>
+                    <a href="#">Vücut Kitle İndeksi</a>
+                    <a href="#">Kilo Verme Diyeti</a>
+                    <a href="#">Uzman Görüşü</a>
+                </div>   
+        </div>
+        <!-- sidenav end -->
+
+    </header>
+    <!-- header end -->
+
+    <!-- home section start-->
+    <div class="carousel">
+        <div class="slides">
+            <a href="article.html">
+            <div class="slide">
+                <img src="Pictures/egersize.jpg">
+                <div><h1>sporla gelen mutluluk: bilimsel olarak kanıtlandı!</h1></div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="slide">
+                <img src="Pictures/doctor.jpg">
+                <div><h1>Doktorların kulağındaki güç: tanıda yeni yöntem</h1></div>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="slide">
+                <img src="Pictures/serume.jpg">
+                <div><h1>Serumun ardındaki gerçek: sessizce yayılan tehlike</h1></div>
+            </div>
+            </a>
+        </div>
+
+        <button class="arrow left">&#10094;</button>
+        <button class="arrow right">&#10095;</button>
+    </div>
+    <!-- home section end-->
+
+</body>
+</html>

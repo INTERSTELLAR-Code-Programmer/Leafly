@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Pictures/logo.png"> <!-- favicon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="Java/header.js" defer></script>
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/article.css">
+    <title>Leafly</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="logo">
+            <button id="menu" onclick="openNav()"><i class="material-icons">menu</i></button>
+            <a href="index.html">
+            <div>
+                <img src="Pictures/logo.png" alt="logo">
+                <h1>LEAFLY</h1>
+            </div>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <div class="nav-item">
+                    <li>Yemek</li>
+                    <div class="dropdown">
+                        <a href="#">Yemek Tarifleri</a>
+                        <a href="#">Sağlıklı Besinler</a>
+                        <a href="#">Besin Ögeleri</a>
+                        <a href="#">Meyve ve Sebzeler</a>
+                        <a href="#">Kategoriler</a>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <li>Kalori</li>
+                    <div class="dropdown">
+                        <a href="#">Kalori Hesaplama</a>
+                        <a href="#">İdeal Kilonu Hesapla</a>
+                        <a href="#">Vücut Yağ Oranı</a>
+                        <a href="besindeğerleri.html">Besin Değerleri</a>
+                        <a href="#">Kalori Kaynakları</a>
+                    </div>   
+                </div>
+
+                <div class="nav-item">
+                    <li>Sağlık</li>
+                    <div class="dropdown">
+                        <a href="#">Hastalıklar</a>
+                        <a href="#">Tanı Yöntemleri</a>
+                        <a href="#">Tedaviler</a>
+                        <a href="#">Uyku Kalitesi</a>
+                        <a href="#">Randevular</a>
+                    </div>   
+                </div>
+
+                <div class="nav-item">
+                    <li>Spor</li>
+                    <div class="dropdown">
+                        <a href="#">Göğüs Egzersizleri</a>
+                        <a href="#">Sırt Egzersizleri</a>
+                        <a href="#">Omuz Egzersizleri</a>
+                        <a href="#">Kol Egzersizleri</a>
+                        <a href="#">Bacak Egzersizleri</a>
+                    </div>   
+                </div>
+
+                <div class="nav-item">
+                    <li>Diyet</li>
+                    <div class="dropdown">
+                        <a href="#">Hızlı Diyet</a>
+                        <a href="#">Diyet Programları</a>
+                        <a href="#">Vücut Kitle İndeksi</a>
+                        <a href="#">Kilo Verme Diyeti</a>
+                        <a href="#">Uzman Görüşü</a>
+                    </div>   
+                </div>
+            </ul>
+        </nav>
+
+        <div class="buttons">
+            <input id="search-input" type="search" placeholder="Search">
+            <button class="search-btn"><i class="material-icons">search</i></button>
+            <button id="btn" class="btn">Üye Ol</button>
+            <button class="close-btn"><i class="material-icons">close</i></button>
+        </div>
+
+        <!-- sidenav start -->
+        <div class="side-nav" id="Side-nav">
+            <div class="side-top">
+                <div class="mini-logo">
+                    <img src="Pictures/logo.png" alt="logo">
+                    <h1>LEAFLY</h1>
+                </div>
+                <a href="javascript::void(0)" class="closebtn" onclick="closeNav()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            </div>
+
+                <button class="dropdown-btn">Yemek <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Yemek Tarifleri</a>
+                    <a href="#">Sağlıklı Besinler</a>
+                    <a href="#">Besin Ögeleri</a>
+                    <a href="#">Meyve ve Sebzeler</a>
+                    <a href="#">Kategoriler</a>
+                </div>
+                <button class="dropdown-btn">Kalori <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Kalori Hesaplama</a>
+                    <a href="#">İdeal Kilonu Hesapla</a>
+                    <a href="#">Vücut Yağ Oranı</a>
+                    <a href="besindeğerleri.html">Besin Değerleri</a>
+                    <a href="#">Kalori Kaynakları</a>
+                </div>
+                
+                <button class="dropdown-btn">Sağlık <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Hastalıklar</a>
+                    <a href="#">Tanı Yöntemleri</a>
+                    <a href="#">Tedaviler</a>
+                    <a href="#">İlaçlar</a>
+                    <a href="#">Randevular</a>
+                </div>  
+
+                <button class="dropdown-btn">Spor <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Göğüs Egzersizleri</a>
+                    <a href="#">Sırt Egzersizleri</a>
+                    <a href="#">Omuz Egzersizleri</a>
+                    <a href="#">Kol Egzersizleri</a>
+                    <a href="#">Bacak Egzersizleri</a>
+                </div>
+
+                <button class="dropdown-btn">Diyet <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-360 280-560h400L480-360Z"/></svg></i></button>
+                <div class="dropdown-container">
+                    <a href="#">Hızlı Diyet</a>
+                    <a href="#">Diyet Programları</a>
+                    <a href="#">Vücut Kitle İndeksi</a>
+                    <a href="#">Kilo Verme Diyeti</a>
+                    <a href="#">Uzman Görüşü</a>
+                </div>   
+        </div>
+        <!-- sidenav end -->
+
+    </header>
+    <!-- header end -->
+
+    <!-- article start -->
+    <article class="article">
+        <section class="block">
+            <h1>Sporun Ruh Sağlığı Üzerindeki Bilimsel Etkileri</h1>
+            <p>
+            Spor, insan sağlığının en temel bileşenlerinden biri olarak sadece fiziksel değil, zihinsel ve duygusal sağlığı da doğrudan etkiler. Son yıllarda yapılan bilimsel araştırmalar, düzenli fiziksel aktivitenin beynin kimyasında değişiklikler yaratarak mutluluk ve genel yaşam memnuniyetini artırdığını ortaya koymaktadır. Özellikle endorfin, dopamin ve serotonin gibi nörotransmitterlerin salgılanması, spor sonrası yaşanan “iyi hissetme” duygusunun biyolojik temelini oluşturur. Endorfinler, vücudun doğal ağrı kesicileri olarak görev yaparken, dopamin motivasyon ve ödül mekanizmasında, serotonin ise ruh hali ve uyku düzeninde kritik rol oynar. Harvard Tıp Fakültesi’nin yaptığı araştırmalara göre, haftada en az 150 dakika orta düzeyde egzersiz yapan bireylerde depresyon ve kaygı seviyeleri belirgin şekilde azalmakta ve genel mutluluk puanları artmaktadır.
+            </p>
+
+            <p>
+            Beyin üzerinde sporun etkisi yalnızca nörotransmitterlerle sınırlı değildir. Düzenli fiziksel aktivite, bilişsel işlevlerin gelişmesini de destekler. Yapılan araştırmalar, spor sırasında artan kan akışı ve oksijenlenmenin beyin hücrelerinin daha verimli çalışmasını sağladığını ortaya koymaktadır. Özellikle aerobik egzersizler, hipokampus gibi hafıza ve öğrenme ile ilgili beyin bölgelerinin hacmini artırabilir. Bu durum, yaşlanma sürecinde bilişsel düşüşün yavaşlamasına yardımcı olur. Ek olarak, spor, stres hormonu olarak bilinen kortizol seviyelerini düşürerek zihinsel dayanıklılığı güçlendirir. Düzenli egzersiz yapan bireylerin stresle başa çıkma kapasitesinin, yapmayanlara kıyasla çok daha yüksek olduğu gözlemlenmiştir. Bu da sporun sadece kısa süreli mutluluk sağlamakla kalmayıp, uzun vadeli psikolojik sağlığı da desteklediğini gösterir.
+            </p>
+
+            <div class="article-image">
+                <img src="Pictures/egersize.jpg">
+            </div>
+
+            <p>
+            Sporun sosyal ve psikolojik etkileri de oldukça önemlidir. Takım sporları, bireyler arasında iletişim, iş birliği ve güven duygularını güçlendirirken, bireysel egzersizler bile kişinin kendine olan güvenini ve öz disiplinini artırır. Araştırmalar, spor yapan bireylerin yalnızlık ve izolasyon hissinin daha az olduğunu ve genel yaşam memnuniyetlerinin daha yüksek olduğunu göstermektedir. Bunun nedeni, sporun sosyal bağları kuvvetlendirmesi, başarı duygusu yaratması ve kişiye kendi bedeni üzerinde kontrol sağlama hissi vermesidir. Ayrıca, çocukluk ve ergenlik döneminde spor yapan bireylerin ilerleyen yaşlarda depresyon ve anksiyete bozukluklarına yakalanma riskinin anlamlı şekilde düşük olduğu birçok uzun süreli çalışmada raporlanmıştır.
+            Sonuç olarak, sporun insan sağlığı üzerindeki etkisi yalnızca estetik veya fiziksel güçle sınırlı değildir; bilimsel veriler sporun ruhsal, zihinsel ve sosyal sağlık üzerinde de güçlü ve olumlu etkiler yarattığını ortaya koymaktadır. Düzenli egzersiz, endorfin ve serotonin gibi mutluluk hormonlarını artırarak ruh halini iyileştirir, bilişsel işlevleri geliştirir ve uzun vadede zihinsel dayanıklılığı güçlendirir. Aynı zamanda spor, sosyal bağları kuvvetlendirir ve bireylerin öz güvenini artırır. Tüm bu bulgular, sporun modern yaşamın stresli ve hızlı temposuna karşı bilimsel olarak kanıtlanmış en etkili çözüm yollarından biri olduğunu göstermektedir. Bu nedenle, fiziksel aktiviteyi günlük rutinimizin vazgeçilmez bir parçası haline getirmek, sadece bedenimizi değil, zihnimizi ve ruhumuzu da sağlıklı tutmanın en etkili yollarından biridir.
+            </p>
+
+            <div class="may">
+                <h2>Bunlar da Hoşunuza Gidebilir</h2>
+                <a href="#">
+                <div>
+                    <img src="Pictures/diet.jpg">
+                    <p>Dengeli Diyet Tabağı Oluşturmanın Püf Noktaları</p>
+                </div>
+                </a>
+
+                <a href="#">
+                <div>
+                    <img src="Pictures/ocean.jpg">
+                    <p>Mavi Derinliklerden Yeşil Ufuklara</p>
+                </div>
+                </a>
+
+                <a href="#">
+                <div>
+                    <img src="Pictures/fastfood.jpg">
+                    <p>Fast Food: Kolaylığın Gizli Tehlikesi</p>
+                </div>
+                </a>
+            </div>
+
+            <p>
+            Tüm bu bilimsel bulgular, sporun yalnızca fiziksel bir aktivite olmadığını, aynı zamanda ruhsal, zihinsel ve sosyal sağlığın güçlü bir destekçisi olduğunu göstermektedir. Düzenli spor, mutluluk hormonlarını artırarak stres ve kaygıyı azaltırken, bilişsel işlevleri geliştirerek hafıza ve dikkat üzerinde olumlu etkiler yaratır. Ayrıca, sosyal bağları güçlendirmesi ve bireyin kendine olan güvenini artırması, sporun yaşam kalitesi üzerindeki kapsamlı etkilerini gözler önüne sermektedir. Spor yapmak, bireylerin günlük hayatın getirdiği zorluklarla daha etkili bir şekilde başa çıkabilmesini sağlar ve psikolojik dayanıklılığı güçlendirir.
+
+            Özellikle modern yaşamın hızlı temposu, yoğun iş yükü ve teknolojinin getirdiği sosyal izolasyon göz önüne alındığında, spor bir tür “zihinsel ilaç” niteliği taşır. Araştırmalar, düzenli egzersizin depresyon, anksiyete ve kronik stres riskini azaltarak uzun vadeli ruh sağlığına katkı sağladığını ortaya koymaktadır. Bu nedenle, fiziksel aktiviteyi günlük rutinimizin vazgeçilmez bir parçası haline getirmek, sadece bedensel sağlığımızı değil, aynı zamanda zihinsel ve duygusal dayanıklılığımızı da güçlendirir. Sonuç olarak, sporun sağladığı faydalar, bilimsel olarak kanıtlanmış ve günlük yaşamda uygulanabilir nitelikte olup, herkes için bir yaşam kalitesi aracıdır.
+            </p>
+
+        </section>
+    </article>
+    <!-- article end -->
+
+</body>
+</html>
